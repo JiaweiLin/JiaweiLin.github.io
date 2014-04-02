@@ -27,7 +27,8 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit(x) { 
-   var prog = document.getElementById("yourcode").value + "rpsls(x)" ; 
+   var cast = x; 
+   var prog = document.getElementById("yourcode").value + "rpsls(cast)" ; 
    var mypre = document.getElementById("output"); 
    mypre.innerHTML = ''; 
    Sk.canvas = "mycanvas";
