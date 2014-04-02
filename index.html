@@ -29,9 +29,21 @@ function builtinRead(x) {
 function runit() { 
    var cast = document.getElementById("cast").value;
    if(cast=="rock"){
-    alert("Hi");
+    var prog = document.getElementById("yourcode").value + "rpsls('rock')";
    }
-   var prog = document.getElementById("yourcode").value + "rpsls('cast')";
+   else if(cast=="Spock"){
+    var prog = document.getElementById("yourcode").value + "rpsls('Spock')";
+   }
+   else if(cast=="paper"){
+    var prog = document.getElementById("yourcode").value + "rpsls('paper')";
+   }
+   else if(cast=="lizard"){
+    var prog = document.getElementById("yourcode").value + "rpsls('lizard')";
+   }
+   else{
+    var prog = document.getElementById("yourcode").value + "rpsls('scissors')";
+   }
+   
    var mypre = document.getElementById("output"); 
    mypre.innerHTML = ''; 
    Sk.canvas = "mycanvas";
