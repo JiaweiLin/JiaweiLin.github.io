@@ -29,7 +29,9 @@ function builtinRead(x) {
 function runit() { 
    var cast = document.getElementById("cast").value;
    alert(cast);
-   var prog = document.getElementById("yourcode").value + "rpsls(cast)";
+   if(cast==rock){
+   var prog = document.getElementById("yourcode").value + "rpsls(rock)";
+   }
    var mypre = document.getElementById("output"); 
    mypre.innerHTML = ''; 
    Sk.canvas = "mycanvas";
