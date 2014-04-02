@@ -26,8 +26,7 @@ function builtinRead(x) {
 // get a reference to your pre element for output
 // configure the output function
 // call Sk.importMainWithBody()
-function runit(x) { 
-   var cast = x; 
+function runit() { 
    var prog = document.getElementById("yourcode").value; 
    var mypre = document.getElementById("output"); 
    mypre.innerHTML = ''; 
@@ -142,7 +141,7 @@ rpsls(rock)
   <option value="scissors">scissors</option>
 </select>
   
-<button type="button" onclick="runit(rock)">Cast!</button> 
+<button type="button" onclick="runit()">Cast!</button> 
 </form> 
 <pre id="output" ></pre> 
 <!-- If you want turtle graphics include a canvas -->
