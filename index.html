@@ -27,7 +27,7 @@ function builtinRead(x) {
 // configure the output function
 // call Sk.importMainWithBody()
 function runit(x) { 
-   var prog = document.getElementById("yourcode").value + "rpsls(x)"
+   var prog = document.getElementById("yourcode").value + "rpsls("x")"
    var mypre = document.getElementById("output"); 
    mypre.innerHTML = ''; 
    Sk.canvas = "mycanvas";
@@ -141,7 +141,7 @@ def rpsls(player_choice):
   <option value="scissors">scissors</option>
 </select>
   
-<button type="button" onclick="runit('rock')">Cast!</button> 
+<button type="button" onclick="runit(rock)">Cast!</button> 
 </form> 
 <pre id="output" ></pre> 
 <!-- If you want turtle graphics include a canvas -->
